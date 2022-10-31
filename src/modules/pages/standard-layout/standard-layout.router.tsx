@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import StandardLayout from 'modules/pages/standard-layout/standard-layout.component';
 import HomePage from 'modules/pages/home.page';
+import EvStationListPage from 'modules/pages/ev-station-list.page';
 
 // The router which configures browser routes to certain pages/components
 // Component elements are only shown when route matches
@@ -13,6 +14,9 @@ export const StandardLayoutRouter = () => (
       <Route path="/" element={<StandardLayout />}>
         {/* Index routes will be displayed when their parent's route path matches */}
         <Route index element={<HomePage />} />
+        <Route path="ev-stations" >
+          <Route path="index" element={<EvStationListPage />} />
+        </Route>
       </Route>
     </Routes>
   </BrowserRouter>

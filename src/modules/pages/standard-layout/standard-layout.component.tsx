@@ -6,7 +6,7 @@ import { ButtonLink } from 'modules/common/components/button-link/button-link.co
 
 const navMenuOptions = [
   { to: '/', text: 'Home' },
-  { to: '/ev-stations', text: 'EV Stations' },
+  { to: '/ev-stations/index', text: 'EV Stations' },
 ];
 
 const ToolbarFill = styled('div')({ flexGrow: 1});
