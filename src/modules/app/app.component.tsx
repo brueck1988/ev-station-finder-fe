@@ -1,10 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './app.component.css';
+import StandardRouter from 'modules/pages/standard-layout/standard-layout.router';
 
 function App() {
   return (
     <div className="App">
+      <StandardRouter />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
