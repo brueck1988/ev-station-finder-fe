@@ -1,5 +1,5 @@
 import { Card, CardContent, CardActionArea, Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; //ToDo: Add link to station details
 import { EvStation } from "modules/ev-station/ev-station.model";
 
 export interface EvStationCardProps {
